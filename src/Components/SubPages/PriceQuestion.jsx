@@ -20,31 +20,42 @@ const PriceCard = ({
       style={{ backgroundColor: "#141414" }}
     >
       <div className="flex items-center justify-start p-4 space-x-5">
-        <img src={imgsrc} alt={title} className="h-20 p-4 rounded-full" />
-        <span className="text-2xl text-textcolor font-semibold">{title}</span>
+        <img
+          src={imgsrc}
+          alt={title}
+          className="lg:h-20 h-14 lg:p-4 p-2 rounded-full"
+        />
+        <span className="lg:text-2xl text-xl  text-textcolor font-semibold">
+          {title}
+        </span>
       </div>
       <hr />
-      <div className="text-xl w-11/12 mx-auto bg-color2 rounded-3xl shadow1 mt-4 overflow-hidden h-[245px] hover:h-[260px] hover:mt-0  hover:shadow none hover:rounded-t-none">
+      <div className="text-xl w-11/12 mx-auto bg-color2 rounded-3xl shadow1 lg:mt-4 overflow-hidden h-[245px] hover:h-[260px] hover:mt-0  hover:shadow none hover:rounded-t-none">
         <div className="container">
           <div className="content">
-            <div className="flex justify-between text-2xl font-semibold items-center h-14 mx-1">
+            <div className="flex justify-between lg:text-2xl text-lg font-semibold items-center h-14 mx-1">
               <h1 className="text-gray2">Projects Completed</h1>
               <h2 className="text-orange">{projectsCompleted}</h2>
             </div>
             <hr />
-            <p className="text-xl font-bold text-gray2 flex items-center h-40">
+            <p className="lg:text-xl text-base font-semibold text-gray2 flex items-center lg:h-40 h-auto p-2">
               {services}
             </p>
             <hr className="shadow2" />
-            <div className="flex justify-between text-2xl font-semibold items-center h-14 mx-1 my-3">
+            <div className="flex justify-between lg:text-2xl text-xl font-semibold items-center lg:h-14 h-12 mx-1 lg:my-3 my-1">
               <h1 className="text-gray2">Starts From</h1>
               <h2 className="text-orange">{startingPrice}</h2>
             </div>
             <hr />
             <div className="flex justify-center items-center h-24">
-              <button className="shedulebutton flex items-center justify-center space-x-2 px-4 py-2 text-xl" style={{width:"220px"}}>
+              <button
+                className="shedulebutton flex items-center justify-center space-x-2 px-4 py-2 text-xl"
+                style={{ width: "220px" }}
+              >
                 <FontAwesomeIcon className="text-orange" icon={faEnvelope} />
-                <span className="text-2xl text-textcolor">Schedule Call</span>
+                <span className="lg:text-2xl text-xl text-textcolor">
+                  Schedule Call
+                </span>
               </button>
             </div>
           </div>
@@ -56,9 +67,9 @@ const PriceCard = ({
 
 const PriceQuestion = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center mx-5 lg:space-x-14 space-y-7">
-      <div className="lg:w-[968px] md:w-9/12 sm:w-10/12 w-full  lg:h-[350px] h-auto rounded-3xl mt-7">
-        <div className="grid lg:grid-cols-3 gap-4  my-1 grid-cols-1">
+    <div className="flex flex-wrap justify-center items-center mx-5 lg:space-x-14">
+      <div className="lg:w-[968px] md:w-9/12 sm:w-10/12 w-full  lg:h-[350px] h-auto rounded-3xl mt-7 mb-10">
+        <div className="grid lg:grid-cols-3 gap-4 space-y-5  my-1 grid-cols-1">
           <PriceCard
             title="Brand Identity"
             projectsCompleted="100+"

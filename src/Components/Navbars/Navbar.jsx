@@ -17,7 +17,7 @@ import {
 import Homepage from "../Pages/Homepage";
 import Workpage from "../Pages/Workpage";
 import Contactpage from "../Pages/Contactpage";
-
+import ScrollToTop from "../ScrollToTop";
 const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();

@@ -6,7 +6,7 @@ import Footer from "../Navbars/Footer";
 const Contactpage = () => {
   return (
     <>
-      <div className=" lg:mt-3 mt-10">
+      <div className=" lg:mt-3 mt-10 ">
         <PriceQuestion />
         <Benefits />
         <Footer />

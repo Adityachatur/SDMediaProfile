@@ -79,7 +79,7 @@ const Faqs = () => {
         <span className="text-orange">Faqs</span>
       </div>{" "}
       <hr />
-      <div className="bg-color2 pt-20  lg:h-[250px] h-[320px] p-4 relative">
+      <div className="bg-color2 pt-20  lg:h-[250px] md:h-[320px] h-auto p-4 relative">
         <Slider {...settings}>
           {cardData.map((item, index) => (
             <div key={index} className="relative flex justify-center">

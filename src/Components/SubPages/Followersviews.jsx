@@ -61,7 +61,7 @@ const Followersviews = () => {
               </h1>
             </div>
           </div>
-          <span className="absolute left-0 right-0 bottom-0 text-xl lg:top-[100px]  top-[80px] text-orange z-0 pl-32">
+          <span className="absolute left-0 right-0 bottom-0 text-xl top-[100px] text-orange z-0 pl-32">
             <marquee behavior="" scrollamount="5" direction="right" hspace="20">
               <div className="flex space-x-5 lg:h-[40px] md:20 h-14">
                 <img src={tiktok} alt="" />

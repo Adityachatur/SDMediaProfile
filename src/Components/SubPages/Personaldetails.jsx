@@ -13,7 +13,7 @@ const Personaldetails = () => {
           className="lg:h-48 lg:w-52 h-36 w-32 rounded-lg lg:m-3 bg-red-300"
         />
         <div className="ml-2 sm:ml-3 space-y-2">
-          <h3 className="bg-gray-600 h-8 lg:px-5 lg:py-6 py-3 px-2 lg:text-xl text-base flex items-center justify-center w-10/12 mt-4 text-textcolor font-semibold rounded-full shadow1">
+          <h3 className="bg-gray-600 h-8 lg:px-5 lg:py-6 py-3 px-2 lg:text-xl text-base flex items-center justify-center lg:w-10/12 md:10/12 w-full mt-4 text-textcolor font-semibold rounded-full shadow1">
             <span className="h-3 w-3 bg-green rounded-full mr-2"></span>
             Available for work
           </h3>
@@ -25,7 +25,7 @@ const Personaldetails = () => {
               icon={faEnvelope}
               className="text-iconcolor lg:h-6 h-3"
             />
-            <span className="text-iconcolor lg:text-xl text-base ml-2">
+            <span className="text-iconcolor lg:text-xl text-[14px] ml-2">
               sahildhadam.sd@gmail.com
             </span>
           </div>
@@ -34,13 +34,13 @@ const Personaldetails = () => {
               icon={faLocationDot}
               className="text-iconcolor lg:h-6 h-4"
             />
-            <span className="text-iconcolor lg:text-xl text-base ml-2">
+            <span className="text-iconcolor lg:text-xl text-[14px] ml-2">
               Pune, Maharashtra-410501.
             </span>
           </div>
         </div>
       </div>
-      <div className="mx-auto bg-color2 rounded-2xl shadow1 py-2 px-6 mt-4">
+      <div className="mx-auto bg-color2 rounded-2xl shadow1 py-2 lg:px-6 px-2 mt-4">
         <dl>
           <h1 className="text-2xl p-2 font-semibold text-textcolor">
             About Me
