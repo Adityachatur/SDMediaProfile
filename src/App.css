@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 nav h1:hover {
@@ -64,17 +65,23 @@ hr {
 
 /* Qualification.css */
 /* Custom styles for slick dots */
-.slick-dots li button:before {
-  color: orange;
-  /* Change dot color to orange */
-  font-size: 12px;
-  /* Adjust size if needed */
+.dots-custom li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  text-indent: -999px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  /* Set the border color for inactive dots */
 }
 
-.slick-dots li.slick-active button:before {
-  color: orange;
-  /* Change active dot color to orange */
+.dots-custom li.slick-active {
+  background: #FFA500;
+  /* Set the background color for active dot */
 }
+
 
 /* 
 .award{
@@ -90,7 +97,6 @@ hr {
 .shedulebutton {
   border: 2px solid black;
   padding: 10px;
-  width: 180px;
   height: 50px;
   background-color: #1E1E1E;
   border-radius: 10px;
@@ -179,11 +185,9 @@ hr {
   animation: slide 10s linear infinite;
 }
 
-
 .custom-dots-wrapper {
   position: absolute;
   top: 10px;
-  /* Adjust as necessary to position the dots at the desired height */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -198,15 +202,13 @@ hr {
 }
 
 .slick-dots.custom-dots li {
-  margin: 250px 5px;
+  margin: 0 5px;
   /* Add horizontal margin to space out the dots */
 }
 
 .slick-dots.custom-dots li button {
   width: 20px;
-  /* Adjust the width as needed */
   height: 20px;
-  /* Ensure the button is square */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,6 +229,7 @@ hr {
   color: #D03216;
   /* Color for active dot */
 }
+
 
 
 
@@ -300,11 +303,6 @@ hr {
   .vertical-line {
     display: none;
     /* Hide on small screens */
-  }
-
-  .slick-dots.custom-dots li {
-    margin: 290px 5px;
-    /* Add horizontal margin to space out the dots */
   }
 }
 

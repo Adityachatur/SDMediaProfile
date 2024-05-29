@@ -1,5 +1,5 @@
 import React from "react";
-import WorkTogether from "./WorkTogether";
+import WorkTogether from "../SubPages/WorkTogether";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import iphone from "../Images/iphone.jpg";

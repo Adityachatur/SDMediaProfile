@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const SkillCard = ({ imgSrc, title, subtitle }) => (
-  <div className="flex h-32 my-2 rounded-3xl text-textcolor items-center justify-around bg-color2 shadow1 p-4">
+  <div className="flex lg:h-32 h-24 m-2 lg:rounded-3xl rounded-2xl text-textcolor items-center justify-around bg-color2 shadow1 p-4">
     <img
       src={imgSrc}
       alt={title}
@@ -26,12 +26,12 @@ const Hardskills = () => {
       <h1 className="text-orange text-xl text-center mt-3">
         <FontAwesomeIcon icon={faCube} /> Use To With
       </h1>
-      <h1 className="font-bold text-3xl text-center text-textcolor">
+      <h1 className="font-bold lg:text-3xl text-2xl text-center text-textcolor">
         My Top 4 Hard Skills
       </h1>
-      <hr className="border-black" />
+      <p className="w-full border-b-2 shadow"></p>
 
-      <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 w-11/12 mx-auto gap-7">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 w-full gap-">
         <SkillCard
           imgSrc={photoshop}
           title="Photoshop"

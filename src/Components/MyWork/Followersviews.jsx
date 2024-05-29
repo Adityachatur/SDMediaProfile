@@ -1,11 +1,7 @@
 import React from "react";
-import followers from "../SubPages/followers.svg";
+import followers from "../Images/followers.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-  faSmile,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import instagram from "../Images/InstagramLogo.svg";
 import behance from "../Images/BehanceLogo.svg";
 import Youtube from "../Images/Youtube.svg";

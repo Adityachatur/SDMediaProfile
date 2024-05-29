@@ -1,10 +1,9 @@
 import React from "react";
-import WorkTogether from "./WorkTogether";
+import WorkTogether from "../SubPages/WorkTogether";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBolt,
   faTrophy,
-  faChartLine,
   faUsers,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";

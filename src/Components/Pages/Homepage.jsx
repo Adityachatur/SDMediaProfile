@@ -1,12 +1,12 @@
 import React from "react";
-import Personaldetails from "../SubPages/Personaldetails";
-import Taskcomplete from "../SubPages/Taskcomplete";
-import Hardskills from "../SubPages/Hardskills";
-import Qualification from "../SubPages/Qualification";
-import WorkExp from "../SubPages/WorkExp";
+
+import Taskcomplete from "../AboutMe/Taskcomplete";
+import Hardskills from "../AboutMe/Hardskills";
+import Qualification from "../AboutMe/Qualification";
+import WorkExp from "../AboutMe/WorkExp";
 import WorkTogether from "../SubPages/WorkTogether";
 import Footer from "../Navbars/Footer";
-
+import Personaldetails from "../AboutMe/Personaldetails";
 const Homepage = () => {
   return (
     <>
@@ -16,9 +16,9 @@ const Homepage = () => {
         <Hardskills />
         <Qualification />
         <WorkExp />
-        <WorkTogether/>
+        <WorkTogether />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -66,25 +66,25 @@ const Faqs = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          vertical: true,
+          vertical: false, // Change to horizontal in mobile view
         },
       },
     ],
   };
 
   return (
-    <div className="w-11/12 mx-auto h-auto">
-      <div className="flex justify-center items-center text-2xl space-x-2 h-28 ">
+    <div className="w-full mx-auto lg:h-[350px] h-[500px]  rounded-3xl shadow1">
+      <div className="flex justify-center items-center text-2xl space-x-2 lg:h-28 h-20 ">
         <FontAwesomeIcon icon={faQuestionCircle} className="text-textcolor" />
         <span className="text-orange">Faqs</span>
       </div>{" "}
       <hr />
-      <div className="bg-color2 pt-20  lg:h-[250px] md:h-[320px] h-auto p-4 relative">
+      <div className="bg-color2 pt-6 pb-12 px-4  lg:pb-0 lg:px-8 lg:h-auto md:h-[320px] h-auto p-4 relative">
         <Slider {...settings}>
           {cardData.map((item, index) => (
-            <div key={index} className="relative flex justify-center">
-              <div className="bg-color2 shadow1 rounded-3xl w-full  text-left lg:h-[190px] md:h-[170px] h-auto mt-2">
-                <div className="text-iconcolor text-lg  font-bold mb-2 py-4 px-6">
+            <div key={index} className="relative">
+              <div className="bg-color2 shadow1 rounded-3xl w-full text-left lg:h-[190px] md:h-[170px] h-auto mt-2">
+                <div className="text-iconcolor text-lg font-bold mb-2 py-4 px-6">
                   {item.question}
                 </div>
                 <hr />

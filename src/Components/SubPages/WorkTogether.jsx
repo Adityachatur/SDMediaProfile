@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./first.svg";
+import img from "../Images/first.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowPointer,
@@ -14,11 +14,11 @@ const WorkTogether = () => {
       <hr />
       <div className="text-white w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 justify-items-center py-4 gap-4">
-          <button className="shedulebutton flex items-center justify-center space-x-2 px-4 py-2 text-xl">
+          <button className="shedulebutton flex items-center justify-center space-x-2 w-[250px] lg:w-[180px] text-xl">
             <FontAwesomeIcon className="text-orange" icon={faCalendar} />
             <span>Schedule Call</span>
           </button>
-          <button className="shedulebutton flex items-center justify-center space-x-2 px-4 py-2 text-xl">
+          <button className="shedulebutton flex items-center justify-center lg:w-[180px] w-[250px] space-x-2 px-4 py-2 text-xl">
             <FontAwesomeIcon className="text-orange" icon={faEnvelope} />
             <span>Mail Me</span>
           </button>

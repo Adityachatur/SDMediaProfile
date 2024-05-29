@@ -1,11 +1,11 @@
 import React from "react";
-import Projectdone from "../SubPages/Projectdone";
-import Followersviews from "../SubPages/Followersviews";
-import Testimonials from "../SubPages/Testimonials";
-import Mywork from "../SubPages/Mywork";
+import Projectdone from "../MyWork/Projectdone";
+import Followersviews from "../MyWork/Followersviews";
+import Testimonials from "../MyWork/Testimonials";
+import Mywork from "../MyWork/Mywork";
 import WorkTogether from "../SubPages/WorkTogether";
 import Footer from "../Navbars/Footer";
-import Faqs from "../SubPages/Faqs";
+import Faqs from "../Services/Faqs";
 
 const Workpage = () => {
   return (

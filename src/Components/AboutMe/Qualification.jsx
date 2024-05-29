@@ -9,7 +9,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import bg from "./awardsvg.svg";
 
 const Qualification = () => {
   const cardData = [
@@ -29,7 +28,6 @@ const Qualification = () => {
 
   const settings = {
     dots: true,
-   
     infinite: true,
     speed: 200,
     autoplay: true,
@@ -40,14 +38,12 @@ const Qualification = () => {
         breakpoint: 1024,
         settings: {
           slidesToScroll: 1,
-          arrows: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToScroll: 1,
-          arrows: false,
         },
       },
     ],
@@ -70,6 +66,7 @@ const Qualification = () => {
             <h1>Year Of Passing: 2025</h1>
           </div>
         </div>
+
         <div className="w-full h-52 shadow1 text-textcolor p-3 rounded-3xl bg-color2">
           <div className="text-center py-2 space-x-2 text-orange">
             <FontAwesomeIcon icon={faAward} className="text-2xl" />
@@ -79,16 +76,8 @@ const Qualification = () => {
           <div>
             <Slider {...settings}>
               {cardData.map((item, index) => (
-                <div
-                  key={index}
-                  className="relative"
-                  style={{
-                    backgroundImage: `url(${bg})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  <div className="mx-1 p-2 h-2/3 shadow-md flex flex-col items-center justify-center">
+                <div key={index} className="relative">
+                  <div className="mx-1 p-2 h-28  flex flex-col items-center justify-center bg-cover bg-center">
                     <div className="text-white text-2xl font-bold">
                       {item.name}
                     </div>
@@ -101,18 +90,20 @@ const Qualification = () => {
             </Slider>
           </div>
         </div>
+
         <div className="w-full lg:h-48 h-36 shadow1 text-textcolor p-3 rounded-3xl bg-color2">
           <div className="text-center py-3 space-x-2 text-orange">
             <FontAwesomeIcon icon={faEarthAmerica} className="text-2xl" />
             <span className="text-xl font-semibold">Language</span>
           </div>
           <hr className="w-full text-color1" />
-          <div className="flex space-x-1 text-gray1 lg:h-24 space-y-2 text-xl justify-center items-center text-center flex-wrap">
+          <div className="flex lg:space-x-1 space-x-2 text-gray1 lg:h-24 space-y-2 text-xl justify-center items-center text-center flex-wrap">
             <h1 className="bg-gray py-2 px-3 rounded-2xl">English</h1>
             <h1 className="bg-gray py-2 px-3 rounded-2xl">Marathi</h1>
             <h1 className="bg-gray py-2 px-3 rounded-2xl">Hindi</h1>
           </div>
         </div>
+
         <div className="w-full lg:h-48 h-36 shadow1 text-textcolor p-3 rounded-3xl bg-color2">
           <div className="text-center py-3 space-x-2 text-orange">
             <FontAwesomeIcon icon={faHourglassEnd} className="text-2xl" />
