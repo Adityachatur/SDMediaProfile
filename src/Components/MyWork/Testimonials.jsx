@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import bg from "./awardsvg.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeft,
+  faArrowRight,
+  faChevronLeft,
+  faChevronRight,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import clientfemale from "../Images/clientfemale.png";
 
 const Testimonials = () => {
+  const sliderRef = useRef(null);
+
   const cardData = [
     {
       name: "Shweta ~ Australia ",
@@ -47,7 +54,7 @@ const Testimonials = () => {
 
   const settings = {
     dots: true,
-    dotsClass: "slick-dots custom-dots", // Use custom class for dots
+    dotsClass: "slick-dots custom-dots",
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -74,22 +81,23 @@ const Testimonials = () => {
 
   return (
     <div>
-      <div className="sm:w-full bg-color2 rounded-3xl lg:h-[350px] lg:w-[460px] lg:mx-auto h-auto  p-2 lg:mb-5  mx-5 relative">
+      <div className="sm:w-full bg-color2 rounded-3xl lg:h-[350px] lg:w-[460px] lg:mx-auto h-auto p-2 lg:mb-5 mx-5 relative">
         <div className="text-center py-5 space-x-2 text-orange">
           <FontAwesomeIcon icon={faUser} className="text-2xl" />
           <span className="text-xl font-semibold">Testimonials</span>
         </div>
         <hr className="text-black" />
         <div className="bg-color2 lg:h-[250px] md:h-[300px] h-auto p-6 relative">
-          <Slider {...settings}>
+          <Slider {...settings} ref={sliderRef}>
             {cardData.map((item, index) => (
-              <div key={index} className="relative flex justify-center">
+              <div key={index} className="relative">
+                {/* Testimonial Card */}
                 <div className="bg-color2 shadow1 rounded-3xl w-full text-left lg:h-[190px] md:h-[170px] h-auto mt-16">
                   <div className="text-iconcolor text-xl font-bold mb-2 py-4 px-6">
                     {item.content}
                   </div>
                   <hr />
-                  <div className="text-gray2 text-lg lg:text-xl flex flex-wrap justify-between items-center h-28 mx-4 ">
+                  <div className="text-gray2 text-lg lg:text-xl flex flex-wrap justify-between items-center h-28 mx-4">
                     <img
                       src={item.img}
                       alt=""
@@ -106,6 +114,27 @@ const Testimonials = () => {
               </div>
             ))}
           </Slider>
+          {/* Arrow Buttons Outside Slider */}
+          <div className="absolute top-[35px]  -translate-y-1/2 lg:left-[75px] -left-1  lg:right-[75px]  -right-1 flex justify-between px-6">
+            <button
+              className="custom-prev-arrow cursor-pointer flex justify-center items-center"
+              onClick={() => sliderRef.current.slickPrev()}
+            >
+              <FontAwesomeIcon
+                icon={faArrowLeft}
+                className="lg:text-2xl text-xl text-iconcolor "
+              />
+            </button>
+            <button
+              className="custom-next-arrow cursor-pointer flex justify-center items-center"
+              onClick={() => sliderRef.current.slickNext()}
+            >
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="lg:text-2xl text-xl text-iconcolor font-light"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  faQuestionCircle,
+  faArrowLeft,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Faqs = () => {
+  const sliderRef = useRef(null);
   const cardData = [
     {
       imageUrl: "path/to/trainer1.jpg", // Update with actual image paths
@@ -40,7 +45,6 @@ const Faqs = () => {
         "Yes, I have experience integrating various third-party tools, plugins, and platforms into websites.",
     },
   ];
-
   const settings = {
     dots: true,
     dotsClass: "slick-dots custom-dots", // Use custom class for dots
@@ -48,7 +52,6 @@ const Faqs = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    vertical: true,
     verticalSwiping: true,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -58,7 +61,6 @@ const Faqs = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          vertical: true,
         },
       },
       {
@@ -66,36 +68,68 @@ const Faqs = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          vertical: false, // Change to horizontal in mobile view
         },
       },
     ],
   };
 
   return (
-    <div className="w-full mx-auto lg:h-[350px] h-[500px]  rounded-3xl shadow1">
+    <div className="w-full mx-auto lg:h-[350px] h-auto  rounded-3xl  my-5">
       <div className="flex justify-center items-center text-2xl space-x-2 lg:h-28 h-20 ">
         <FontAwesomeIcon icon={faQuestionCircle} className="text-textcolor" />
         <span className="text-orange">Faqs</span>
-      </div>{" "}
+      </div>
       <hr />
-      <div className="bg-color2 pt-6 pb-12 px-4  lg:pb-0 lg:px-8 lg:h-auto md:h-[320px] h-auto p-4 relative">
-        <Slider {...settings}>
-          {cardData.map((item, index) => (
-            <div key={index} className="relative">
-              <div className="bg-color2 shadow1 rounded-3xl w-full text-left lg:h-[190px] md:h-[170px] h-auto mt-2">
-                <div className="text-iconcolor text-lg font-bold mb-2 py-4 px-6">
-                  {item.question}
-                </div>
-                <hr />
-                <div className="text-gray2 text-lg lg:text-xl p-6 mb-4">
-                  {item.content}
+      <div className="bg-color2 pt-6  px-4  lg:pb-0 lg:px-8 lg:h-auto md:h-[300px] h-auto  relative">
+        <div className="mt-14">
+          <Slider {...settings} ref={sliderRef}>
+            {cardData.map((item, index) => (
+              <div key={index} className="relative">
+                <div className="bg-color2 shadow1 rounded-3xl w-full text-left lg:h-[190px] md:h-[170px] h-auto mt-2 p-4">
+                  {" "}
+                  {/* Adjusted padding */}
+                  <div className="text-iconcolor text-lg font-bold mb-2 py-4 px-6">
+                    {item.question}
+                  </div>
+                  <hr />
+                  <div className="text-gray2 text-lg lg:text-xl p-6 mb-4">
+                    {item.content}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
+        {/* Arrow Buttons Outside Slider */}
+        <div className="absolute top-[35px]  -translate-y-1/2 lg:left-[75px] -left-1  lg:right-[75px]  -right-1 flex justify-between px-6">
+          <button
+            className="custom-prev-arrow cursor-pointer flex justify-center items-center"
+            onClick={() => sliderRef.current?.slickPrev()}
+          >
+            <FontAwesomeIcon
+              icon={faArrowLeft}
+              className="lg:text-2xl text-xl text-iconcolor "
+            />
+          </button>
+          <button
+            className="custom-next-arrow cursor-pointer flex justify-center items-center"
+            onClick={() => sliderRef.current?.slickNext()}
+          >
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              className="lg:text-2xl text-xl text-iconcolor font-light"
+            />
+          </button>
+        </div>
       </div>
+      <style>
+        {`
+       .slick-dots{
+        top: -47px !important;
+       }
+       
+      `}
+      </style>
     </div>
   );
 };
