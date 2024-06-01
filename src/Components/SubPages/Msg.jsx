@@ -23,7 +23,7 @@ const Msg = () => {
 
   return (
     <div className="relative font-manrope">
-      <div className="lg:w-60 w-44 lg:h-16 h-14 rounded-2xl shadow1 bg-red-300  z-50 flex  items-center justify-center cursor-pointer update2upgrade">
+      <div className="lg:w-60 w-7/12 lg:h-16 h-14 rounded-2xl shadow1 bg-red-300 z-50 flex items-center justify-center cursor-pointer update2upgrade">
         <div className="dropdown relative">
           <button
             className="dropbtn flex items-center justify-center h-16"
@@ -35,9 +35,9 @@ const Msg = () => {
               alt="Footer Logo"
               className="lg:h-16 h-12 lg:p-2 p-1 rounded-2xl"
             />
-            <h1 className=" text-textcolor">
+            <h1 className="text-textcolor lg:text-lg text-[14px]">
               {isHovered ? (
-                <span className="lg:text-2xl text-base lg:p-2">SDC MEDIA</span>
+                <span className="lg:text-xl text-base lg:p-2">SDC MEDIA</span>
               ) : (
                 "#Update2Upgrade"
               )}
@@ -45,18 +45,20 @@ const Msg = () => {
           </button>
           {isHovered && (
             <div className="dropdown-content absolute bg-white mt-2 shadow-lg rounded-lg p-4">
-              <a className="block lg:mb-4 mb-2">
+              <button className="block w-full text-left lg:mb-4 mb-2 focus:outline-none">
                 <div className="bg-color3 shadow1 rounded-3xl p-2">
                   <div className="flex items-center lg:h-20 h-12 mb-2 text-textcolor">
                     <img src={behance} alt="Behance" className="h-10 ml-4" />
-                    <h1 className="lg:text-xl text-lg ml-4">My Creatives at</h1>
+                    <h1 className="lg:text-xl font-semibold text-[16px] ml-3">
+                      My Creatives at
+                    </h1>
                   </div>
-                  <p className="lg:text-lg text-base px-5">
+                  <p className="lg:text-lg text-[14px] lg:px-5 px-2 text-gray2">
                     Behance portfolio dives onto a perfect skillset overview.
                   </p>
                 </div>
-              </a>
-              <a className="block lg:mb-4 mb-2">
+              </button>
+              <button className="block w-full text-left lg:mb-4 mb-2 focus:outline-none">
                 <div className="bg-color3 shadow1 rounded-3xl p-2">
                   <div className="flex items-center lg:h-20 h-12 mb-2 text-textcolor">
                     <img
@@ -64,33 +66,32 @@ const Msg = () => {
                       alt="Instagram"
                       className="h-10 ml-4"
                     />
-                    <h1 className="lg:text-xl text-lg ml-4">
+                    <h1 className="lg:text-xl font-semibold text-[16px] ml-3">
                       Follow at Instagram
                     </h1>
                   </div>
-                  <p className="lg:text-lg text-base px-5">
+                  <p className="lg:text-lg text-[14px] text-gray2 lg:px-5 px-2">
                     Gens showcase platform of client works and recreational
                     projects.
                   </p>
                 </div>
-              </a>
-              <a className="block">
+              </button>
+              <button className="block w-full text-left focus:outline-none">
                 <div className="bg-color3 shadow1 rounded-3xl p-2">
                   <div className="flex items-center lg:h-20 h-12 mb-2 text-textcolor justify-start">
                     <FontAwesomeIcon
                       icon={faLinkedinIn}
                       className="h-10 ml-4"
                     />
-
-                    <h1 className="lg:text-xl text-lg ml-4">
+                    <h1 className="lg:text-xl text-[16px] font-semibold ml-3">
                       Connect with LinkedIn
                     </h1>
                   </div>
-                  <p className="lg:text-lg text-base px-5">
+                  <p className="lg:text-lg text-[14px] text-gray2 lg:px-5 px-2">
                     Professional works showcase for certain media publishment.
                   </p>
                 </div>
-              </a>
+              </button>
             </div>
           )}
         </div>

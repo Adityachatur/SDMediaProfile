@@ -128,6 +128,11 @@ const Faqs = () => {
         top: -47px !important;
        }
        
+       @media (max-width: 768px) {
+        .slick-dots{
+          top:-65px !important;
+        }
+      }
       `}
       </style>
     </div>

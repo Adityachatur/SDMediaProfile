@@ -73,7 +73,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar-container py-12 font-manrope">
-        <nav className="navbar flex justify-center space-x-6 font-semibold lg:text-xl text-base rounded-3xl h-[85px] items-center lg:w-[400px] w-auto lg:mx-auto mx-4">
+        <nav className="navbar flex justify-center space-x-6 font-semibold lg:text-xl text-base rounded-3xl h-[85px] items-center xl:w-full lg:w-[400px] w-auto lg:mx-auto mx-4">
           {pages.map(({ path, label, icon }) => (
             <Link key={path} to={path}>
               <button

@@ -11,7 +11,7 @@ import toprightarow from "../Images/2CAOf1Muun0RpvPvaXMPvvcw.svg";
 const MyWork = () => {
   return (
     <div className="flex flex-wrap justify-center items-center  lg:space-x-12 space-y-7 lg:space-y-0 lg:mx-auto mx-5 font-manrope">
-      <div className="lg:w-[968px] md:w-9/12 sm:w-10/12 w-full shadow-internal bg-color2 lg:h-[350px] h-auto rounded-3xl mt-0">
+      <div className="lg:w-[60vw] md:w-9/12 sm:w-10/12 w-full shadow-internal bg-color2 lg:h-[350px] h-auto rounded-3xl mt-0">
         <div className="flex flex-col md:flex-row justify-between items-center lg:h-28 h-auto">
           <div className="py-3 lg:pl-5 text-center">
             <h1 className="text-orange text-xl py-2">
