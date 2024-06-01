@@ -4,7 +4,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Faqs from "./Faqs";
 import brandidentity from "../Images/brand-identity (1).png";
 import threedViews from "../Images/3d-view.png";
-import videomotion from "../Images/videomotion.png";
+import videomotion from "../Images/motion.png";
+import { motion } from "framer-motion";
 
 const PriceCard = ({
   title,
@@ -14,7 +15,7 @@ const PriceCard = ({
   imgsrc,
 }) => {
   return (
-    <div className="h-[345px] rounded-3xl shadow1 bg-[#141414] flex flex-col justify-between">
+    <div className="h-[345px] rounded-3xl shadow1 bg-[#141414] flex flex-col justify-between font-manrope">
       <div className="flex items-center justify-start p-4 space-x-5">
         <img
           src={imgsrc}

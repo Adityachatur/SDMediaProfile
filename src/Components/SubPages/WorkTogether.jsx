@@ -9,7 +9,7 @@ import {
 
 const WorkTogether = () => {
   return (
-    <div className="sm:w-full bg-color2 shadow1 rounded-3xl lg:h-[350px] h-auto space-y-3 p-2 relative">
+    <div className="sm:w-full bg-color2 shadow1 rounded-3xl lg:h-[350px] h-auto space-y-3 p-2 relative font-manrope">
       <img src={img} alt="" className="w-full rounded-3xl lg:h-80" />
       <hr />
       <div className="text-white w-11/12 mx-auto">

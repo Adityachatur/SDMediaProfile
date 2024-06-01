@@ -15,14 +15,14 @@ const Projectdone = () => {
   ];
 
   return (
-    <div className="sm:w-full text-textcolor rounded-3xl  lg:h-[350px] px-4  h-auto ">
+    <div className="sm:w-full text-textcolor rounded-3xl  lg:h-[350px] px-4  h-auto font-manrope ">
       <div className="grid lg:grid-cols-2  grid-cols-2 lg:mb-0 md:mb-0 mb-5 gap-5  mx-auto">
         {stats.map((stat, index) => (
           <div
             key={index}
             className="w-full mx-auto h-52 lg:mb-5  bg-color2 text-textcolor rounded-3xl shadow1  flex flex-col justify-center"
           >
-            <h1 className="lg:text-6xl text-5xl font-bold text-center flex justify-center items-center my-5">
+            <h1 className="lg:text-7xl text-5xl font-semibold text-center flex justify-center items-center my-5">
               {stat.value} <span className="text-orange">+</span>
             </h1>
             <hr className="text-black mt-3 mb-2" />

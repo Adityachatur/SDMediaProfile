@@ -37,7 +37,7 @@ const benefitsData = [
 ];
 
 const BenefitCard = ({ icon, percentage, description }) => (
-  <div className="flex flex-row lg:mx-10 mx-0 my-2 justify-between items-center">
+  <div className="flex flex-row lg:mx-10 mx-0 my-2 justify-between items-center font-manrope">
     <div className="text-2xl text-center font-bold text-textcolor p-4 rounded-full shadow w-16 m-4 h-16">
       <FontAwesomeIcon icon={icon} />
     </div>
@@ -65,7 +65,7 @@ const BenefitCard = ({ icon, percentage, description }) => (
 
 const Benefits = () => (
   <div>
-    <div className="flex flex-wrap justify-center items-center mx-5 lg:space-x-14  h-auto ">
+    <div className="flex flex-wrap justify-center items-center mx-5 lg:space-x-14  h-auto font-manrope ">
       <div className="lg:w-[968px] md:w-9/12 sm:w-10/12 w-full shadow-internal bg-color2 lg:h-[350px] h-auto rounded-3xl  my-5 relative">
         <div className="text-center h-20 flex justify-center items-center py-3 space-x-2 text-orange">
           <FontAwesomeIcon icon={faBolt} className="text-2xl" />

@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const SkillCard = ({ imgSrc, title, subtitle }) => (
-  <div className="flex lg:h-32 h-24 m-2 lg:rounded-3xl rounded-2xl text-textcolor items-center justify-around bg-color2 shadow1 p-4">
+  <div className="flex lg:h-32 h-24 m-2 lg:rounded-3xl rounded-2xl text-textcolor items-center justify-around bg-color2 shadow1 p-4 font-manrope">
     <img
       src={imgSrc}
       alt={title}
@@ -22,16 +22,18 @@ const SkillCard = ({ imgSrc, title, subtitle }) => (
 
 const Hardskills = () => {
   return (
-    <div className="sm:w-full bg-color2 rounded-3xl lg:h-[350px] h-auto space-y-3 lg:p-4 p-2 mb-4">
-      <h1 className="text-orange text-xl text-center mt-3">
-        <FontAwesomeIcon icon={faCube} /> Use To With
-      </h1>
-      <h1 className="font-bold lg:text-3xl text-2xl text-center text-textcolor">
-        My Top 4 Hard Skills
-      </h1>
-      <p className="w-full border-b-2 shadow"></p>
+    <div className="sm:w-full bg-color2 rounded-3xl lg:h-[350px] h-auto space-y-3 lg:p-4 p-2 mb-4 font-manrope">
+      <div className="h-24 space-y-5">
+        <h1 className="text-orange text-xl text-center">
+          <FontAwesomeIcon icon={faCube} /> Use To With
+        </h1>
+        <h1 className="font-semibold lg:text-2xl text-xl text-center text-textcolor">
+          My Top 4 Hard Skills
+        </h1>
+        <p className="w-full border-b-2 shadow"></p>
+      </div>
 
-      <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 w-full gap-">
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 w-full gap-4 py-5">
         <SkillCard
           imgSrc={photoshop}
           title="Photoshop"

@@ -5,7 +5,7 @@ import personal from "../Images/Personalimg.jpg";
 
 const Personaldetails = () => {
   return (
-    <div className="sm:w-full bg-color2 mainbox-shadow  rounded-3xl lg:h-[350px] h-auto space-y-3 lg:p-4 p-2 mb-4">
+    <div className="sm:w-full bg-color2 mainbox-shadow  rounded-3xl lg:h-[350px] h-auto space-y-3 lg:p-4 p-2 mb-4 font-manrope">
       <div className="flex">
         <img
           src={personal}
@@ -25,7 +25,7 @@ const Personaldetails = () => {
               icon={faEnvelope}
               className="text-iconcolor lg:h-6 h-3"
             />
-            <span className="text-iconcolor lg:text-xl text-[14px] ml-2">
+            <span className="text-iconcolor lg:text-xl text-[12px] ml-2">
               sahildhadam.sd@gmail.com
             </span>
           </div>
@@ -34,7 +34,7 @@ const Personaldetails = () => {
               icon={faLocationDot}
               className="text-iconcolor lg:h-6 h-4"
             />
-            <span className="text-iconcolor lg:text-xl text-[14px] ml-2">
+            <span className="text-iconcolor lg:text-xl text-[12px] ml-2">
               Pune, Maharashtra-410501.
             </span>
           </div>

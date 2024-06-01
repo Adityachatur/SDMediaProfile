@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const StatisticCard = ({ count, label }) => (
-  <div className="w-full h-44 bg-color2 text-textcolor rounded-3xl shadow1 flex flex-col items-center justify-center p-1">
-    <h1 className="lg:text-6xl text-4xl font-bold flex items-center">
+  <div className="w-full h-44 bg-color2 text-textcolor rounded-3xl shadow1 flex flex-col items-center justify-center p-1 font-manrope">
+    <h1 className="lg:text-6xl text-4xl font-semibold flex items-center">
       {count} <span className="text-orange">+</span>
     </h1>
     <hr className="w-full border-black mt-2" />
@@ -28,8 +28,8 @@ const SocialCard = ({ icon, count, label }) => (
         className="text-3xl p-4 rounded-full shadow1 mr-4"
       />
       <div>
-        <h1 className="text-2xl font-bold">{count} +</h1>
-        <p className="text-iconcolor text-lg">{label}</p>
+        <h1 className="text-[22px] font-semibold">{count} +</h1>
+        <p className="text-iconcolor font-semibold text-lg">{label}</p>
       </div>
     </div>
     <FontAwesomeIcon
@@ -41,13 +41,13 @@ const SocialCard = ({ icon, count, label }) => (
 
 const Taskcomplete = () => {
   return (
-    <div className="w-full rounded-3xl bg-color2 h-auto p-4 mb-4 mx-auto">
+    <div className="w-full rounded-3xl bg-color2 h-auto p-4 mb-4 mx-auto font-manrope">
       <div className="flex flex-col lg:flex-row lg:space-y-1 space-y-5 lg:space-x-4 w-full">
         <div className="flex flex-col lg:my-7 space-y-5 w-full lg:w-1/2">
           <StatisticCard count="500" label="Completed Tasks" />
           <StatisticCard count="10" label="Happy International Clients" />
         </div>
-        <div className="flex flex-col space-y-5 w-full lg:w-1/2">
+        <div className="flex flex-col space-y-5 w-full lg:w-1/2 font-manrope">
           <SocialCard icon={faBehance} count="197" label="Viewers" />
           <SocialCard icon={faInstagram} count="200" label="Followers" />
           <SocialCard icon={faLinkedinIn} count="300" label="Connections" />

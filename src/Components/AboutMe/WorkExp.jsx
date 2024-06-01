@@ -77,7 +77,7 @@ const CompanyBanner = ({ experience, orderClass }) => (
 
 const WorkExp = () => {
   return (
-    <div className="w-full bg-color2 rounded-3xl space-y-3 lg:p-4 p-2 mb-4">
+    <div className="w-full bg-color2 rounded-3xl space-y-3 lg:p-4 p-2 mb-4 font-manrope">
       <div className="text-center py-3 space-x-2 text-orange">
         <FontAwesomeIcon icon={faSuitcase} className="text-2xl" />
         <span className="text-xl font-semibold">Work Experience</span>

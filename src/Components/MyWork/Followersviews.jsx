@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 const Followersviews = () => {
   return (
     <div>
-      <div className="sm:w-full rounded-3xl lg:h-[350px] h-auto  px-4 relative">
+      <div className="sm:w-full rounded-3xl lg:h-[350px] h-auto  px-4 relative font-manrope">
         <div className="h-44 sm:h-40 md:h-52 lg:h-52 relative">
           <img
             src={followers}

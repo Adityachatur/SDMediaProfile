@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Footerlogo from "../Images/Footerlogo.png";
 import HoverFooterlogo from "../Images/Personalimg.jpg"; // Path to the hover image
 import behance from "../Images/BehanceLogo.svg";
-import instagram from '../Images/InstagramLogo.svg';
-import linkedin from '../Images/linkedin-512.png';
+import instagram from "../Images/InstagramLogo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const Msg = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -17,18 +18,12 @@ const Msg = () => {
   const handleMouseLeave = () => {
     setTimeout(() => {
       setIsHovered(false);
-    }, 9000);
+    }, 5000);
   };
 
   return (
-    <div className="relative">
-      <div
-        className="w-56 h-16 rounded-2xl bg-black z-50 flex items-center justify-center cursor-pointer"
-        style={{
-          backgroundColor: "#000000",
-          backgroundImage: "linear-gradient(315deg, #000000 90%, #7f8c8d 100%)",
-        }}
-      >
+    <div className="relative font-manrope">
+      <div className="lg:w-60 w-44 lg:h-16 h-14 rounded-2xl shadow1 bg-red-300  z-50 flex  items-center justify-center cursor-pointer update2upgrade">
         <div className="dropdown relative">
           <button
             className="dropbtn flex items-center justify-center h-16"
@@ -38,43 +33,60 @@ const Msg = () => {
             <img
               src={isHovered ? HoverFooterlogo : Footerlogo}
               alt="Footer Logo"
-              className="h-16 p-2 rounded-2xl"
+              className="lg:h-16 h-12 lg:p-2 p-1 rounded-2xl"
             />
-            <h1 className="text-base text-textcolor">
-              {isHovered ? <span className="text-2xl p-2">SDC MEDIA</span> : "#Update2Upgrade"}
+            <h1 className=" text-textcolor">
+              {isHovered ? (
+                <span className="lg:text-2xl text-base lg:p-2">SDC MEDIA</span>
+              ) : (
+                "#Update2Upgrade"
+              )}
             </h1>
           </button>
           {isHovered && (
             <div className="dropdown-content absolute bg-white mt-2 shadow-lg rounded-lg p-4">
-              <a href="#" className="block mb-4">
+              <a className="block lg:mb-4 mb-2">
                 <div className="bg-color3 shadow1 rounded-3xl p-2">
-                  <div className="flex items-center h-20 text-textcolor">
-                    <img src={behance} alt="Behance" className="h-10 mr-4" />
-                    <h1>My Creatives at</h1>
+                  <div className="flex items-center lg:h-20 h-12 mb-2 text-textcolor">
+                    <img src={behance} alt="Behance" className="h-10 ml-4" />
+                    <h1 className="lg:text-xl text-lg ml-4">My Creatives at</h1>
                   </div>
-                  <p className="text-lg px-5">
+                  <p className="lg:text-lg text-base px-5">
                     Behance portfolio dives onto a perfect skillset overview.
                   </p>
                 </div>
               </a>
-              <a href="#" className="block mb-4">
+              <a className="block lg:mb-4 mb-2">
                 <div className="bg-color3 shadow1 rounded-3xl p-2">
-                  <div className="flex items-center h-20 text-textcolor">
-                    <img src={instagram} alt="Instagram" className="h-10 mr-4" />
-                    <h1>Follow at Instagram</h1>
+                  <div className="flex items-center lg:h-20 h-12 mb-2 text-textcolor">
+                    <img
+                      src={instagram}
+                      alt="Instagram"
+                      className="h-10 ml-4"
+                    />
+                    <h1 className="lg:text-xl text-lg ml-4">
+                      Follow at Instagram
+                    </h1>
                   </div>
-                  <p className="text-lg px-5">
-                    Gens showcase platform of client works and recreational projects.
+                  <p className="lg:text-lg text-base px-5">
+                    Gens showcase platform of client works and recreational
+                    projects.
                   </p>
                 </div>
               </a>
-              <a href="#" className="block">
-                <div className="bg-color3 shadow1 rounded-3xl py-5">
-                  <div className="flex items-center h-20 text-textcolor justify-start">
-                    <img src={linkedin} alt="LinkedIn" className="h-10 mr-4" />
-                    <h1>Connect with LinkedIn</h1>
+              <a className="block">
+                <div className="bg-color3 shadow1 rounded-3xl p-2">
+                  <div className="flex items-center lg:h-20 h-12 mb-2 text-textcolor justify-start">
+                    <FontAwesomeIcon
+                      icon={faLinkedinIn}
+                      className="h-10 ml-4"
+                    />
+
+                    <h1 className="lg:text-xl text-lg ml-4">
+                      Connect with LinkedIn
+                    </h1>
                   </div>
-                  <p className="text-lg px-5">
+                  <p className="lg:text-lg text-base px-5">
                     Professional works showcase for certain media publishment.
                   </p>
                 </div>
