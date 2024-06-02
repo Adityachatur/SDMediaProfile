@@ -50,7 +50,7 @@ const Qualification = () => {
   };
 
   return (
-    <div className="sm:w-full bg-color2 rounded-3xl lg:h-[350px] h-auto space-y-3 lg:p-4 p-2 mb-4 font-manrope">
+    <div className="sm:w-full bg-color2 rounded-3xl h-full  space-y-3 lg:p-4 p-2 mb-4 font-manrope">
       <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-5 space-y-1">
         <div className="w-full h-52 shadow1 text-textcolor p-3 rounded-3xl bg-color2">
           <div className="text-center py-3 space-x-2 text-orange">

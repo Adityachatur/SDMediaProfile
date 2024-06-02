@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Syncopate:wght@400;700&display=swap');
 
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -12,48 +13,35 @@ nav h1:hover {
   transition: color 0.5s;
 }
 
-/* Navbar.css */
-
+/* Navbar Styles */
 .navbar-container {
   position: fixed;
   top: 1;
   width: 100%;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  /* Apply the blur effect */
   background: rgba(20, 20, 20, 0.605);
-  /* Semi-transparent background for the blur effect to be visible */
   padding: 1px 0;
-  /* Adjust padding to avoid content overlap */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Optional: adds a shadow for better visibility */
 }
 
 .page-container {
   padding-top: 100px;
-}
-
-
-.page-container {
   transition: transform 0.3s ease;
   will-change: transform;
 }
 
-
-
+/* Shadow Styles */
 .shadow-internal {
-  box-shadow: rgba(12, 12, 12, 0.5) 0px 6px 5px 10px,
-    rgb(35, 35, 35) 0px 0px 0px 4px;
+  box-shadow: rgba(12, 12, 12, 0.5) 0px 6px 5px 10px, rgb(35, 35, 35) 0px 0px 0px 4px;
 }
 
 .shadow {
-  box-shadow:
-    1px 1px 2px rgba(255, 255, 255, 0.1),
-    -1px -1px 2px rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1), -1px -1px 2px rgba(255, 255, 255, 0.3);
 }
 
 .mainbox-shadow {
-  box-shadow: (20, 20, 20) 0px 0px 0px 4px, rgba(13, 13, 13, 0.7) 0px 0px 5px 10px;
+  box-shadow: 0px 0px 0px 4px rgba(20, 20, 20), 0px 0px 5px 10px rgba(13, 13, 13, 0.7);
 }
 
 .shadow1 {
@@ -61,45 +49,36 @@ nav h1:hover {
 }
 
 hr {
-
   box-shadow: (30, 30, 30) 0px 1px 0px 0px inset, rgb(15, 15, 15) 0px -2px 1px 0px inset;
 }
 
-/* Qualification.css */
-
-
-
+/* Qualification Styles */
 .award {
   background-image: url(./Components/Images/awardsvg.svg);
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
-
-
-
+/* Button Styles */
 .shedulebutton {
   border: 2px solid black;
   padding: 10px;
   height: 50px;
   background-color: #1E1E1E;
   border-radius: 10px;
-
 }
-
 
 .shedulebutton:hover {
   background-color: #262626;
   transition: background-color 0.4s ease-in-out;
 }
 
+/* Bounce Box Styles */
 .bounce-box {
   position: absolute;
   bottom: 120px;
   right: 40px;
   background-color: #1E1E1E;
-  /* Tomato background color */
   color: white;
   padding: 10px 20px;
   border-radius: 12.381% 47.619% 47.619% / 36.1111% 138.889% 138.889%;
@@ -107,7 +86,7 @@ hr {
   animation: bounce 5s infinite;
 }
 
-/* Media Queries */
+/* Media Queries for Bounce Box */
 @media (max-width: 1024px) {
   .bounce-box {
     bottom: 130px;
@@ -152,8 +131,6 @@ hr {
   }
 }
 
-/* Add this CSS to your styles.css or global.css file */
-
 @keyframes slide {
   0% {
     transform: translateX(100%);
@@ -164,11 +141,7 @@ hr {
   }
 }
 
-
-
-/* Add this CSS to your styles */
-
-/* Custom dots */
+/* Custom Dots Styles */
 .custom-dots {
   position: absolute;
   top: -2%;
@@ -210,28 +183,12 @@ hr {
   color: #D03216;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slick-next,
 .slick-prev {
   display: none !important;
 }
 
-/* Custom arrows */
+/* Custom Arrows Styles */
 .custom-prev-arrow,
 .custom-next-arrow {
   padding: 7px !important;
@@ -243,7 +200,7 @@ hr {
   font-size: 24px !important;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments for Custom Dots and Arrows */
 @media screen and (max-width: 768px) {
   .custom-dots {
     width: 120px !important;
@@ -274,10 +231,7 @@ hr {
   }
 }
 
-
-
-/* question and ans */
-
+/* Question and Answer Styles */
 .container {
   position: relative;
   width: 90%;
@@ -301,19 +255,7 @@ hr {
   transform: translateY(-25%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Hide scrollbar for Chrome, Safari and Opera */
+/* Hide Scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -323,19 +265,14 @@ hr {
   scrollbar-width: none;
 }
 
+/* Footer Styles */
 
-
-/* Footer  */
-/* Dropdown.css */
-
-/* Style The Dropdown Button */
-/* The container <div> - needed to position the dropdown content */
+/* Dropdown Styles */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -349,36 +286,26 @@ hr {
   padding: 10px 0;
 }
 
-
-
-
-
-/* Links inside the dropdown */
 .dropdown-content a {
   color: #E6E6E6;
   padding: 5px 16px;
   text-decoration: none;
   display: block;
-
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #191919;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-
 }
 
 .dropbtn {
   background-color: none;
 }
 
-
-
+/* Update to Upgrade Button */
 .update2upgrade {
   background-image: linear-gradient(to right, #545657 0%, #191919 51%, #545657 100%);
   text-align: center;
@@ -391,18 +318,10 @@ hr {
 
 .update2upgrade:hover {
   background-position: right center;
-  /* change the direction of the change here */
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-/* Responsive adjustments */
+/* Vertical Line Responsive Adjustments */
 @media (max-width: 1024px) {
   .vertical-line {
     left: 100px;
@@ -413,7 +332,6 @@ hr {
 @media (max-width: 768px) {
   .vertical-line {
     display: none;
-    /* Hide on small screens */
   }
 
   .dropdown-content {

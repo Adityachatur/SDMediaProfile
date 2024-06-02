@@ -71,21 +71,24 @@ const CompanyBanner = ({ experience, orderClass }) => (
         {experience.id}
       </div>
     </div>
-    <div className="absolute top-0 bottom-0 lg:left-[-34px] left-[-15px] w-[2px]  lg:h-[110%] md:h-[43vh] h-[70vh] " style={{backgroundColor:"#383838"}}></div>
+    <div
+      className="absolute top-0 bottom-0 lg:left-[-34px] left-[-18px] w-[2px]  lg:h-[110%] md:h-[43vh] h-[70vh] "
+      style={{ backgroundColor: "#383838" }}
+    ></div>
   </div>
 );
 
 const WorkExp = () => {
   return (
-    <div className="w-full bg-color2 rounded-3xl space-y-3 lg:p-4 p-2 mb-4 font-manrope">
+    <div className="w-full h-full bg-color2 rounded-3xl space-y-3 lg:p-4 p-2 mb-4 font-manrope">
       <div className="text-center py-3 space-x-2 text-orange">
         <FontAwesomeIcon icon={faSuitcase} className="text-2xl" />
         <span className="text-xl font-semibold">Work Experience</span>
       </div>
       <hr className="w-full text-color1" />
 
-      <div className="lg:overflow-auto lg:h-[250px] h-auto no-scrollbar">
-        <div className="grid lg:grid-cols-2 grid-cols-1 w-full mx-auto my-5">
+      <div className="lg:overflow-auto lg:h-[270px] h-auto no-scrollbar">
+        <div className="grid lg:grid-cols-2 grid-cols-1 w-full mx-auto my-4">
           <WorkExperienceItem
             experience={workExperiences[0]}
             orderClass="order-2 lg:order-1"

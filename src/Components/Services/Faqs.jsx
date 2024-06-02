@@ -74,7 +74,7 @@ const Faqs = () => {
   };
 
   return (
-    <div className="w-full mx-auto lg:h-[350px] h-auto  rounded-3xl  my-5 font-manrope">
+    <div className="w-full mx-auto lg:h-full h-auto  rounded-3xl  my-5 font-manrope">
       <div className="flex justify-center items-center text-2xl space-x-2 lg:h-28 h-20 ">
         <FontAwesomeIcon icon={faQuestionCircle} className="text-textcolor" />
         <span className="text-orange">Faqs</span>

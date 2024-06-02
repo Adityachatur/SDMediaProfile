@@ -22,7 +22,7 @@ const SkillCard = ({ imgSrc, title, subtitle }) => (
 
 const Hardskills = () => {
   return (
-    <div className="sm:w-full bg-color2 rounded-3xl lg:h-[350px] h-auto space-y-3 lg:p-4 p-2 mb-4 font-manrope">
+    <div className="sm:w-full bg-color2 rounded-3xl h-full space-y-3 lg:p-4 p-2 mb-4 font-manrope ">
       <div className="h-24 space-y-5">
         <h1 className="text-orange text-xl text-center">
           <FontAwesomeIcon icon={faCube} /> Use To With
@@ -33,27 +33,29 @@ const Hardskills = () => {
         <p className="w-full border-b-2 shadow"></p>
       </div>
 
-      <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 w-full gap-4 py-5">
-        <SkillCard
-          imgSrc={photoshop}
-          title="Photoshop"
-          subtitle="Graphic Design"
-        />
-        <SkillCard
-          imgSrc={aftereffect}
-          title="After Effects"
-          subtitle="Motion Graphics"
-        />
-        <SkillCard
-          imgSrc={premierpro}
-          title="Premier Pro"
-          subtitle="Video Editing"
-        />
-        <SkillCard
-          imgSrc={autodeskmaya}
-          title="Autodesk Maya"
-          subtitle="3D Animation"
-        />
+      <div className="flex justify-center items-center w-full h-auto">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 w-full gap-4 py-5">
+          <SkillCard
+            imgSrc={photoshop}
+            title="Photoshop"
+            subtitle="Graphic Design"
+          />
+          <SkillCard
+            imgSrc={aftereffect}
+            title="After Effects"
+            subtitle="Motion Graphics"
+          />
+          <SkillCard
+            imgSrc={premierpro}
+            title="Premier Pro"
+            subtitle="Video Editing"
+          />
+          <SkillCard
+            imgSrc={autodeskmaya}
+            title="Autodesk Maya"
+            subtitle="3D Animation"
+          />
+        </div>
       </div>
     </div>
   );

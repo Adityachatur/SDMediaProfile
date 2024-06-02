@@ -41,7 +41,7 @@ const SocialCard = ({ icon, count, label }) => (
 
 const Taskcomplete = () => {
   return (
-    <div className="w-full rounded-3xl bg-color2 h-auto p-4 mb-4 mx-auto font-manrope">
+    <div className="w-full flex justify-center items-center h-full rounded-3xl bg-color2 p-4 mb-4 mx-auto font-manrope">
       <div className="flex flex-col lg:flex-row lg:space-y-1 space-y-5 lg:space-x-4 w-full">
         <div className="flex flex-col lg:my-7 space-y-5 w-full lg:w-1/2">
           <StatisticCard count="500" label="Completed Tasks" />

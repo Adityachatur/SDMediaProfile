@@ -10,7 +10,7 @@ import Personaldetails from "../AboutMe/Personaldetails";
 const Homepage = () => {
   return (
     <>
-      <div className="bg-color1 grid grid-cols-1 md:grid-col lg:grid-cols-3 gap-6 px-5 h-full lg:w-full md:w-9/12 sm:w-10/12 w-full md:mx-auto sm:mx-auto">
+      <div className="bg-color1 grid grid-cols-1  xl:grid-cols-3 lg:grid-cols-2 gap-6 px-5 h-full lg:w-full md:w-9/12 sm:w-10/12 w-full md:mx-auto sm:mx-auto">
         <Personaldetails />
         <Taskcomplete />
         <Hardskills />

@@ -16,12 +16,12 @@ import { Link } from "react-router-dom";
 const Followersviews = () => {
   return (
     <div>
-      <div className="sm:w-full rounded-3xl lg:h-[350px] h-auto  px-4 relative font-manrope">
-        <div className="h-44 sm:h-40 md:h-52 lg:h-52 relative">
+      <div className="sm:w-full rounded-3xl h-full bg-gray p-4 relative font-manrope">
+        <div className="h-44 sm:h-40 md:h-56 lg:h-56 relative">
           <img
             src={followers}
             alt="Followers"
-            className="object-contain h-full absolute left-0 right-0 top-0 bottom-0 z-10"
+            className="object-contain h-full mt-2 absolute left-0 right-0 top-0 bottom-0 z-10"
           />
           <span className="absolute left-0 right-0 bottom-0 text-xl lg:top-8 top-3 text-orange z-0">
             <marquee behavior="" direction="left" hspace="1">
@@ -70,8 +70,8 @@ const Followersviews = () => {
             </marquee>
           </span>
         </div>
-        <div className="grid grid-cols-2 gap-7   ">
-          <div className="w-full h-52 lg:mt-10 my-5 bg-color2 text-textcolor rounded-3xl shadow1 p-2 lg:p-4 flex flex-col justify-center space-y-4">
+        <div className="grid grid-cols-2 gap-4   ">
+          <div className="w-full h-56  mt-9 bg-color2 text-textcolor rounded-3xl shadow1 p-2 lg:p-4 flex flex-col justify-center space-y-4">
             <div className="flex flex-row w-full lg:w-9/12 mx-auto">
               <img
                 src={instagram}
@@ -104,7 +104,7 @@ const Followersviews = () => {
             </Link>
           </div>
 
-          <div className="w-full h-52 lg:mt-10 my-5 bg-color2 text-textcolor rounded-3xl shadow1 p-2 lg:p-4 flex flex-col justify-center space-y-4">
+          <div className="w-full h-56 mt-9 bg-color2 text-textcolor rounded-3xl shadow1 p-2 lg:p-4 flex flex-col justify-center space-y-4">
             <div className="flex flex-row w-full lg:w-9/12 mx-auto">
               <img
                 src={behance}

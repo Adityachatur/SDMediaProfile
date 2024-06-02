@@ -81,13 +81,13 @@ const Testimonials = () => {
 
   return (
     <div>
-      <div className="sm:w-full bg-color2 rounded-3xl lg:h-[350px] lg:w-[30vw] lg:mx-auto h-auto p-2 lg:mb-5 mx-5 relative font-manrope">
+      <div className="sm:w-full bg-gray rounded-3xl h-full lg:mx-auto p-4 lg:mb-5  relative font-manrope">
         <div className="text-center py-5 space-x-2 text-orange">
           <FontAwesomeIcon icon={faUser} className="text-2xl" />
           <span className="text-xl font-semibold">Testimonials</span>
         </div>
         <hr className="text-black" />
-        <div className="bg-color2 lg:h-[250px] md:h-[300px] h-auto p-6 relative">
+        <div className="bg-color2 lg:h-[300px] md:h-[300px] h-auto p-6 relative">
           <Slider {...settings} ref={sliderRef}>
             {cardData.map((item, index) => (
               <div key={index} className="relative">

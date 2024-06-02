@@ -15,12 +15,12 @@ const Projectdone = () => {
   ];
 
   return (
-    <div className="sm:w-full text-textcolor rounded-3xl  lg:h-[350px] px-4  h-auto font-manrope ">
-      <div className="grid lg:grid-cols-2  grid-cols-2 lg:mb-0 md:mb-0 mb-5 gap-5  mx-auto">
+    <div className="w-full text-textcolor rounded-3xl h-full px-4 bg-gray font-manrope py-5 ">
+      <div className="grid lg:grid-cols-2  grid-cols-2  gap-4   mx-auto">
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="w-full mx-auto h-52 lg:mb-5  bg-color2 text-textcolor rounded-3xl shadow1  flex flex-col justify-center"
+            className="w-full mx-auto h-56 mt-2 item-center  bg-color2 text-textcolor rounded-3xl shadow1  flex flex-col justify-center"
           >
             <h1 className="lg:text-7xl text-5xl font-semibold text-center flex justify-center items-center my-5">
               {stat.value} <span className="text-orange">+</span>

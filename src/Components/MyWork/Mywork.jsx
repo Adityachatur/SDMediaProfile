@@ -10,9 +10,9 @@ import toprightarow from "../Images/2CAOf1Muun0RpvPvaXMPvvcw.svg";
 
 const MyWork = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center  lg:space-x-12 space-y-7 lg:space-y-0 lg:mx-auto mx-5 font-manrope">
-      <div className="lg:w-[60vw] md:w-9/12 sm:w-10/12 w-full shadow-internal bg-color2 lg:h-[350px] h-auto rounded-3xl mt-0">
-        <div className="flex flex-col md:flex-row justify-between items-center lg:h-28 h-auto">
+    <div className="flex lg:flex-row flex-col justify-center items-center my-4 xl:flex-row  h-full lg:mx-auto font-manrope">
+      <div className="lg:w-[64vw] w-full ml-6 mr-3 mt-1 shadow-internal bg-color2 xl:h-auto lg:h-full h-auto rounded-3xl mb-4 lg:mb-0">
+        <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center lg:h-28 h-auto">
           <div className="py-3 lg:pl-5 text-center">
             <h1 className="text-orange text-xl py-2">
               <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
@@ -53,7 +53,7 @@ const MyWork = () => {
           ))}
         </div>
       </div>
-      <div className="lg:w-[460px] md:w-9/12 sm:w-10/12 w-full lg:h-[350px] h-auto rounded-3xl flex justify-center items-center">
+      <div className="lg:w-[32vw] w-full xl:h-auto lg:-auto h-auto rounded-3xl flex justify-center mt-1 lg:ml-2 items-center">
         <WorkTogether />
       </div>
     </div>

@@ -15,7 +15,7 @@ const PriceCard = ({
   imgsrc,
 }) => {
   return (
-    <div className="h-[345px] rounded-3xl shadow1 bg-[#141414] flex flex-col justify-between font-manrope">
+    <div className="h-[370px] rounded-3xl shadow1 bg-[#141414] flex flex-col justify-between font-manrope">
       <div className="flex items-center justify-start p-4 space-x-5">
         <img
           src={imgsrc}
@@ -64,9 +64,9 @@ const PriceCard = ({
 
 const PriceQuestion = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center mx-5 lg:space-x-14">
-      <div className="lg:w-[968px] md:w-9/12 sm:w-10/12 w-full lg:h-[350px] h-auto rounded-3xl mt-7 mb-10">
-        <div className="grid lg:grid-cols-3 gap-8 my-1 grid-cols-1">
+    <div className="flex lg:flex-row xl:flex-row flex-col items-center justify-center lg:space-x-6 mx-6 ">
+      <div className="lg:w-[63vw] md:w-9/12 sm:w-10/12 w-full lg:h-full  h-auto rounded-3xl my-4 ">
+        <div className="grid lg:grid-cols-3 gap-4  grid-cols-1">
           <PriceCard
             title="Brand Identity"
             projectsCompleted="100+"
@@ -90,7 +90,7 @@ const PriceQuestion = () => {
           />
         </div>
       </div>
-      <div className="lg:w-[468px] md:w-9/12 sm:w-10/12 w-full lg:h-[350px] h-auto rounded-3xl flex justify-center items-center bg-color2">
+      <div className="lg:w-[32vw] md:w-9/12 sm:w-10/12 w-full lg:h-full h-auto rounded-3xl flex justify-center items-center bg-color2 my-4">
         <Faqs />
       </div>
     </div>

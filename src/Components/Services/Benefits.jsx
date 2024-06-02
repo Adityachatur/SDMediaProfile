@@ -65,14 +65,14 @@ const BenefitCard = ({ icon, percentage, description }) => (
 
 const Benefits = () => (
   <div>
-    <div className="flex flex-wrap justify-center items-center mx-5 lg:space-x-14  h-auto font-manrope ">
-      <div className="lg:w-[968px] md:w-9/12 sm:w-10/12 w-full shadow-internal bg-color2 lg:h-[350px] h-auto rounded-3xl  my-5 relative">
+    <div className="flex flex-wrap justify-center items-center  h-auto font-manrope lg:space-x-6 mx-6  ">
+      <div className="lg:w-[63vw] md:w-9/12 sm:w-10/12 w-full shadow-internal bg-color2 lg:h-full h-auto rounded-3xl  my-5 relative">
         <div className="text-center h-20 flex justify-center items-center py-3 space-x-2 text-orange">
           <FontAwesomeIcon icon={faBolt} className="text-2xl" />
           <span className="text-xl font-semibold">Benefits</span>
         </div>
         <hr className="w-full" />
-        <div className="flex flex-col h-[300px] overflow-auto no-scrollbar">
+        <div className="flex flex-col h-[280px] overflow-auto no-scrollbar">
           <marquee direction="up">
             {[...Array(100)].map((_, index) =>
               benefitsData.map((benefit, i) => (
@@ -86,11 +86,8 @@ const Benefits = () => (
             )}
           </marquee>
         </div>
-        {/* <div className="vertical-line">
-          <div className="middle-dot"></div>
-        </div> */}
       </div>
-      <div className="lg:w-[460px] md:w-9/12 sm:w-10/12 w-full lg:h-[350px] h-auto rounded-3xl flex justify-center items-center my-5">
+      <div className="lg:w-[32vw] md:w-9/12 sm:w-10/12 w-full lg:h-[350px] h-auto rounded-3xl flex justify-center items-center ">
         <WorkTogether />
       </div>
     </div>
