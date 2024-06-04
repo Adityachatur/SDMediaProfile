@@ -5,7 +5,7 @@ import personal from "../Images/Personalimg.jpg";
 
 const Personaldetails = () => {
   return (
-    <div className="w-full bg-color2 shadow-lg rounded-3xl h-full space-y-3 lg:p-4 p-2 font-manrope flex flex-col justify-center items-center">
+    <div className="w-full bg-color2 mainbox-shadow rounded-3xl h-full space-y-3 lg:p-4 p-2 font-manrope flex flex-col justify-center items-center">
       <div className="flex flex-col lg:flex-row items-center lg:items-start">
         <img
           src={personal}

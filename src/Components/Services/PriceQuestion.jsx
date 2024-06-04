@@ -15,7 +15,7 @@ const PriceCard = ({
   imgsrc,
 }) => {
   return (
-    <div className="h-[370px] rounded-3xl shadow1 bg-[#141414] flex flex-col justify-between font-manrope">
+    <div className="h-[370px]  rounded-3xl mainbox-shadow bg-[#141414] flex flex-col justify-between font-manrope">
       <div className="flex items-center justify-start p-4 space-x-5">
         <img
           src={imgsrc}
@@ -27,7 +27,7 @@ const PriceCard = ({
         </span>
       </div>
       <hr />
-      <div className="text-xl w-11/12 mx-auto bg-color2 rounded-3xl shadow1 lg:mt-4 overflow-hidden h-[245px] hover:h-[260px] hover:mt-0 hover:shadow-none hover:rounded-t-none">
+      <div className="text-xl w-11/12 mx-auto bg-color2 rounded-3xl shadow1 lg:mt-4 overflow-hidden h-[245px] hover:h-[260px] hover:mt-0 hover:rounded-t-none hover:shadow-none">
         <div className="container">
           <div className="content">
             <div className="flex justify-between lg:text-2xl text-lg font-semibold items-center h-14 mx-1">
@@ -64,9 +64,9 @@ const PriceCard = ({
 
 const PriceQuestion = () => {
   return (
-    <div className="flex lg:flex-row xl:flex-row flex-col items-center justify-center lg:space-x-6 mx-6 ">
-      <div className="lg:w-[63vw] md:w-9/12 sm:w-10/12 w-full lg:h-full  h-auto rounded-3xl my-4 ">
-        <div className="grid lg:grid-cols-3 gap-4  grid-cols-1">
+    <div className="flex lg:flex-col xl:flex-row flex-col items-center justify-center lg:space-x-6 mx-6 ">
+      <div className="lg:w-[63vw] md:w-10/12 sm:w-11/12 w-full lg:h-full  h-auto rounded-3xl my-4 ">
+        <div className="grid lg:grid-cols-3 lg:gap-7 gap-5  grid-cols-1">
           <PriceCard
             title="Brand Identity"
             projectsCompleted="100+"
@@ -90,7 +90,7 @@ const PriceQuestion = () => {
           />
         </div>
       </div>
-      <div className="lg:w-[32vw] md:w-9/12 sm:w-10/12 w-full lg:h-full h-auto rounded-3xl flex justify-center items-center bg-color2 my-4">
+      <div className="lg:w-[32vw] md:w-9/12 sm:w-10/12 w-full lg:h-full h-auto rounded-3xl mainbox-shadow flex justify-center items-center bg-color2 my-4">
         <Faqs />
       </div>
     </div>

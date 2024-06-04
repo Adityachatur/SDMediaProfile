@@ -5,7 +5,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight, faSmile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import toprightarrow from "../Images/2CAOf1Muun0RpvPvaXMPvvcw.svg";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const StatisticCard = ({ count, label }) => (
   <div className="w-full h-44 bg-color2 text-textcolor rounded-3xl shadow1 flex flex-col items-center justify-center p-1 font-manrope">
@@ -32,8 +34,9 @@ const SocialCard = ({ icon, count, label }) => (
         <p className="text-iconcolor font-semibold text-lg">{label}</p>
       </div>
     </div>
-    <FontAwesomeIcon
-      icon={faArrowRight}
+    <img
+      src={toprightarrow}
+      alt=""
       className="text-3xl p-3 cursor-pointer border-2 border-color2 rounded-full"
     />
   </div>
@@ -41,15 +44,20 @@ const SocialCard = ({ icon, count, label }) => (
 
 const Taskcomplete = () => {
   return (
-    <div className="w-full flex justify-center items-center h-full rounded-3xl bg-color2 p-4 mb-4 mx-auto font-manrope">
+    <div className="w-full mainbox-shadow flex justify-center items-center h-full rounded-3xl bg-color2 p-4 mb-4 mx-auto font-manrope">
       <div className="flex flex-col lg:flex-row lg:space-y-1 space-y-5 lg:space-x-4 w-full">
         <div className="flex flex-col lg:my-7 space-y-5 w-full lg:w-1/2">
           <StatisticCard count="500" label="Completed Tasks" />
           <StatisticCard count="10" label="Happy International Clients" />
         </div>
         <div className="flex flex-col space-y-5 w-full lg:w-1/2 font-manrope">
-          <SocialCard icon={faBehance} count="197" label="Viewers" />
-          <SocialCard icon={faInstagram} count="200" label="Followers" />
+          <Link to={""}>
+            {" "}
+            <SocialCard icon={faBehance} count="197" label="Viewers" />
+          </Link>
+          <Link to={"https://www.instagram.com/sdcreatx.design/"}>
+            <SocialCard icon={faInstagram} count="200" label="Followers" />
+          </Link>
           <SocialCard icon={faLinkedinIn} count="300" label="Connections" />
         </div>
       </div>

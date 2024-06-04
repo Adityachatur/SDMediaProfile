@@ -22,7 +22,7 @@ const SkillCard = ({ imgSrc, title, subtitle }) => (
 
 const Hardskills = () => {
   return (
-    <div className="sm:w-full bg-color2 rounded-3xl h-full space-y-3 lg:p-4 p-2 mb-4 font-manrope ">
+    <div className="sm:w-full bg-color2 rounded-3xl mainbox-shadow h-full space-y-3 lg:p-4 p-2 mb-4 font-manrope ">
       <div className="h-24 space-y-5">
         <h1 className="text-orange text-xl text-center">
           <FontAwesomeIcon icon={faCube} /> Use To With

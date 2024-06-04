@@ -15,7 +15,7 @@ const Projectdone = () => {
   ];
 
   return (
-    <div className="w-full text-textcolor rounded-3xl h-full px-4 bg-gray font-manrope py-5 ">
+    <div className="w-full text-textcolor rounded-3xl h-full px-4 bg-color2 mainbox-shadow font-manrope py-5 ">
       <div className="grid lg:grid-cols-2  grid-cols-2  gap-4   mx-auto">
         {stats.map((stat, index) => (
           <div

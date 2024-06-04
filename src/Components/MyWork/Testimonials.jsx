@@ -81,7 +81,7 @@ const Testimonials = () => {
 
   return (
     <div>
-      <div className="sm:w-full bg-gray rounded-3xl h-full lg:mx-auto p-4 lg:mb-5  relative font-manrope">
+      <div className="sm:w-full bg-color2 mainbox-shadow rounded-3xl h-full lg:mx-auto p-4 lg:mb-5  relative font-manrope">
         <div className="text-center py-5 space-x-2 text-orange">
           <FontAwesomeIcon icon={faUser} className="text-2xl" />
           <span className="text-xl font-semibold">Testimonials</span>

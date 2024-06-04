@@ -80,14 +80,14 @@ const CompanyBanner = ({ experience, orderClass }) => (
 
 const WorkExp = () => {
   return (
-    <div className="w-full h-full bg-color2 rounded-3xl space-y-3 lg:p-4 p-2 mb-4 font-manrope">
+    <div className="w-full h-full bg-color2 rounded-3xl space-y-3 lg:p-4 p-2 mb-4 font-manrope mainbox-shadow">
       <div className="text-center py-3 space-x-2 text-orange">
         <FontAwesomeIcon icon={faSuitcase} className="text-2xl" />
         <span className="text-xl font-semibold">Work Experience</span>
       </div>
       <hr className="w-full text-color1" />
 
-      <div className="lg:overflow-auto lg:h-[270px] h-auto no-scrollbar">
+      <div className="lg:overflow-auto  lg:h-[270px] h-auto no-scrollbar">
         <div className="grid lg:grid-cols-2 grid-cols-1 w-full mx-auto my-4">
           <WorkExperienceItem
             experience={workExperiences[0]}

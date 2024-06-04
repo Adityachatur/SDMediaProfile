@@ -10,8 +10,8 @@ import toprightarow from "../Images/2CAOf1Muun0RpvPvaXMPvvcw.svg";
 
 const MyWork = () => {
   return (
-    <div className="flex lg:flex-row flex-col justify-center items-center my-4 xl:flex-row  h-full lg:mx-auto font-manrope">
-      <div className="lg:w-[64vw] w-full ml-6 mr-3 mt-1 shadow-internal bg-color2 xl:h-auto lg:h-full h-auto rounded-3xl mb-4 lg:mb-0">
+    <div className="flex lg:flex-row flex-col justify-center items-center my-4  xl:flex-row  h-full lg:mx-auto mx-4 font-manrope">
+      <div className="lg:w-[64vw] w-full lg:ml-6 lg:mr-3 lg:m-0 m-4 mt-1 mainbox-shadow bg-color2 xl:h-auto lg:h-full h-auto rounded-3xl mb-4 lg:mb-0">
         <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center lg:h-28 h-auto">
           <div className="py-3 lg:pl-5 text-center">
             <h1 className="text-orange text-xl py-2">
