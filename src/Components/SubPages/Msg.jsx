@@ -18,7 +18,7 @@ const Msg = () => {
   const handleMouseLeave = () => {
     setTimeout(() => {
       setIsHovered(false);
-    }, 5000);
+    }, 8000);
   };
 
   return (
@@ -46,7 +46,7 @@ const Msg = () => {
           {isHovered && (
             <div className="dropdown-content absolute bg-white mt-2 shadow-lg rounded-lg p-4">
               <button className="block w-full text-left lg:mb-4 mb-2 focus:outline-none">
-                <div className="bg-color3 shadow1 rounded-3xl p-2">
+                <div className="bg-color3 shadow1 rounded-3xl p-2 msgarrow">
                   <div className="flex items-center lg:h-20 h-12 mb-2 text-textcolor">
                     <img src={behance} alt="Behance" className="h-10 ml-4" />
                     <h1 className="lg:text-xl font-semibold text-[16px] ml-3">

@@ -120,11 +120,7 @@ const Followersviews = () => {
                 <p className="text-zinc-400">Followers</p>
               </div>
             </div>
-            <Link
-              to={
-                "https://auth.services.adobe.com/en_US/deeplink.html#/social-only"
-              }
-            >
+            <Link to={"https://www.behance.net/sahildhadam"}>
               {" "}
               <button className="border-2 text-xl border-black py-2 lg:py-3  lg:px-1 w-full lg:w-9/12 flex justify-center  mx-auto rounded-3xl shadow1 transition-all duration-300 hover:bg-gray">
                 Check Out

@@ -357,3 +357,14 @@ hr {
     min-width: 320px;
   }
 }
+
+
+/* msg start */
+
+.msgarrow:hover {
+  background-image: url(./Components/Images/2CAOf1Muun0RpvPvaXMPvvcw.svg);
+  background-repeat: no-repeat;
+  text-align: end;
+}
+
+/* msg end */

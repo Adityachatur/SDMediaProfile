@@ -6,6 +6,7 @@ import {
   faCalendar,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const WorkTogether = () => {
   return (
@@ -18,10 +19,12 @@ const WorkTogether = () => {
             <FontAwesomeIcon className="text-orange" icon={faCalendar} />
             <span>Schedule Call</span>
           </button>
-          <button className="shedulebutton flex items-center justify-center lg:w-[180px] w-[250px] space-x-2 px-4 py-2 text-xl">
-            <FontAwesomeIcon className="text-orange" icon={faEnvelope} />
-            <span>Mail Me</span>
-          </button>
+          <Link to="mailto:sahildhadam.sd@gmail.com">
+            <button className="shedulebutton flex items-center justify-center lg:w-[180px] w-[250px] space-x-2 px-4 py-2 text-xl">
+              <FontAwesomeIcon className="text-orange" icon={faEnvelope} />
+              <span>Mail Me</span>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="bounce-box flex flex-col items-center">
