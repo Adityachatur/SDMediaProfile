@@ -16,6 +16,7 @@ module.exports = {
         green: "#6DD33D",
         textcolor: "#E6E6E6",
         iconcolor: "#999999",
+        border: "#383838"
       },
       fontFamily: {
         manrope: ['Manrope', 'sans-serif'],

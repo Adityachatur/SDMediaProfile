@@ -3,7 +3,7 @@ import {
   faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight, faSmile } from "@fortawesome/free-solid-svg-icons";
+import { faSmile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import toprightarrow from "../Images/2CAOf1Muun0RpvPvaXMPvvcw.svg";
 import React from "react";
@@ -51,14 +51,16 @@ const Taskcomplete = () => {
           <StatisticCard count="10" label="Happy International Clients" />
         </div>
         <div className="flex flex-col space-y-5 w-full lg:w-1/2 font-manrope">
-          <Link to={""}>
+          <Link to={"https://www.behance.net/sahildhadam"}>
             {" "}
             <SocialCard icon={faBehance} count="197" label="Viewers" />
           </Link>
           <Link to={"https://www.instagram.com/sdcreatx.design/"}>
             <SocialCard icon={faInstagram} count="200" label="Followers" />
           </Link>
-          <SocialCard icon={faLinkedinIn} count="300" label="Connections" />
+          <Link to={"https://www.linkedin.com/in/sahil-dhadam-6bb91120b/"}>
+            <SocialCard icon={faLinkedinIn} count="300" label="Connections" />
+          </Link>
         </div>
       </div>
     </div>

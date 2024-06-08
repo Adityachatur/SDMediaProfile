@@ -11,6 +11,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import clientfemale from "../Images/clientfemale.png";
+import clientmale from "../Images/file.png";
 
 const Testimonials = () => {
   const sliderRef = useRef(null);
@@ -40,14 +41,14 @@ const Testimonials = () => {
     {
       name: "Abhilash ~ Pune ",
       content: "Amazing logo with exact concept thinking, mind-blowing...!",
-      img: "",
+      img: clientmale,
       position: "Entrepreneur",
     },
     {
       name: "Mahesh Dubey",
       content:
         "Up to the mark brand design with the appropriate content and visuals. Satisfied with the work!",
-      img: "",
+      img: clientmale,
       position: "Architecture",
     },
   ];

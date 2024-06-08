@@ -368,3 +368,20 @@ hr {
 }
 
 /* msg end */
+
+
+
+/* shedule call start */
+.timeset {
+  position: relative;
+  
+}
+
+.timeset:hover {
+  background-image: url('./Components/Images/2CAOf1Muun0RpvPvaXMPvvcw.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #545657;
+}
+
+/* Shedule call end */
