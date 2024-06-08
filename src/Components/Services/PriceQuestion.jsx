@@ -6,6 +6,7 @@ import brandidentity from "../Images/brand-identity (1).png";
 import threedViews from "../Images/3d-view.png";
 import videomotion from "../Images/motion.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const PriceCard = ({
   title,
@@ -45,15 +46,17 @@ const PriceCard = ({
             </div>
             <hr />
             <div className="flex justify-center items-center h-24">
-              <button
-                className="shedulebutton flex items-center justify-center space-x-2 px-4 py-2 text-xl"
-                style={{ width: "220px" }}
-              >
-                <FontAwesomeIcon className="text-orange" icon={faEnvelope} />
-                <span className="lg:text-2xl text-xl text-textcolor">
-                  Schedule Call
-                </span>
-              </button>
+              <Link to={"/timeset"}>
+                <button
+                  className="shedulebutton flex items-center justify-center space-x-2 px-4 py-2 text-xl"
+                  style={{ width: "220px" }}
+                >
+                  <FontAwesomeIcon className="text-orange" icon={faEnvelope} />
+                  <span className="lg:text-2xl text-xl text-textcolor">
+                    Schedule Call
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

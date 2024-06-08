@@ -55,11 +55,11 @@ hr {
 }
 
 /* Qualification Styles */
-.award {
+/* .award {
   background-image: url(./Components/Images/awardsvg.svg);
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 /* Button Styles */
 .shedulebutton {
@@ -360,11 +360,15 @@ hr {
 
 
 /* msg start */
+.msgarrow {
+  position: relative;
+}
 
 .msgarrow:hover {
-  background-image: url(./Components/Images/2CAOf1Muun0RpvPvaXMPvvcw.svg);
+  background-image: url('./Components/Images/2CAOf1Muun0RpvPvaXMPvvcw.svg');
   background-repeat: no-repeat;
-  text-align: end;
+  background-position: right top;
+  background-color: #3b3d3e;
 }
 
 /* msg end */
@@ -374,7 +378,7 @@ hr {
 /* shedule call start */
 .timeset {
   position: relative;
-  
+
 }
 
 .timeset:hover {
