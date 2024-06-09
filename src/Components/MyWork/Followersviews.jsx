@@ -44,15 +44,15 @@ const Followersviews = () => {
               </h1>
             </div>
           </div>
-          <span className="flex justify-center h-1/2 border-b-2 border-gray" />
+          <span className="flex justify-center h-[55%] border-b-2 border-gray" />
           <div className="text-white absolute left-0 right-0 top-100 bottom-4 z-20">
             <div className="text-orange text-xl flex items-end h-20 p-4">
               <h1>
                 <span className="lg:text-5xl text-4xl text-textcolor font-semibold">
-                  200+{" "}
+                  50+{" "}
                 </span>{" "}
-                <span className="lg:text-lg text-base">
-                  Happy Clients Over…
+                <span className="lg:text-lg text-base text-gray2">
+                  Happy Clients
                 </span>
               </h1>
             </div>

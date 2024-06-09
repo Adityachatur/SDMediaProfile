@@ -10,12 +10,12 @@ const Personaldetails = () => {
         <img
           src={personal}
           alt="Sahil Dhadam"
-          className="xl:h-48 xl:w-52 lg:h-48 lg:w-52 w-28 h-32 rounded-3xl lg:m-3  lg:mb-0"
+          className="xl:h-48 xl:w-52 lg:h-48 lg:w-52  h-32 rounded-3xl lg:m-3  lg:mb-0"
         />
         <div className="ml-0 lg:ml-3 lg:space-y-4 space-y-2 text-center lg:text-left">
           <div className="flex items-center justify-center lg:justify-start">
-            <h3 className="bg-gray-600 h-8 lg:px-5 lg:py-6 py-3 px-3 lg:text-xl text-[14px] flex items-center   lg:w-10/12 w-11/12 mt-2 text-textcolor font-semibold rounded-full shadow1">
-              <span className="h-3 w-3 bg-green rounded-full p-2 mr-2"></span>
+            <h3 className="bg-gray-600 h-8 lg:px-5 lg:py-6 py-3 px-4 lg:text-xl text-[12px] flex items-center    lg:w-10/12 w-auto mt-2 text-textcolor font-medium rounded-full shadow1">
+              <span className="h-[1px] bg-green rounded-full p-1 mr-2"></span>
               Available for work
             </h3>
           </div>
@@ -31,7 +31,7 @@ const Personaldetails = () => {
               sahildhadam.sd@gmail.com
             </span>
           </div>
-          <div className="flex items-center justify-center lg:justify-start ml-2">
+          <div className="flex items-center justify-center lg:justify-start">
             <FontAwesomeIcon
               icon={faLocationDot}
               className="text-iconcolor lg:h-6 h-4"

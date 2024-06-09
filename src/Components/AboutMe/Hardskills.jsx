@@ -1,18 +1,20 @@
 import photoshop from "../Images/Photoshop.png";
 import aftereffect from "../Images/AfterEffect.png";
 import premierpro from "../Images/PremierPro.png";
-import autodeskmaya from "../Images/AutodeskMaya.png";
+import autodeskmaya from "../Images/autodeskmaya.webp";
 import { faCube } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const SkillCard = ({ imgSrc, title, subtitle }) => (
   <div className="flex lg:h-32 h-24 m-2 lg:rounded-3xl rounded-2xl text-textcolor items-center justify-around bg-color2 shadow1 p-4 font-manrope">
-    <img
-      src={imgSrc}
-      alt={title}
-      className="lg:h-[55px] lg:w-[55px] h-16 w-16 p-2 border-color2 shadow1 rounded-2xl mr-2"
-    />
+    <div className="lg:h-20 lg:w-20 h-16 w-16 shadow1 rounded-2xl flex items-center justify-center">
+      <img
+        src={imgSrc}
+        alt={title}
+        className="lg:h-20 lg:w-20  h-16 w-16 p-3 border-color2"
+      />
+    </div>
     <div>
       <h1 className="text-xl text-gray1 font-bold">{title}</h1>
       <p className="text-gray2 text-lg">{subtitle}</p>
