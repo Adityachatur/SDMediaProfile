@@ -31,7 +31,7 @@ const Personaldetails = () => {
               sahildhadam.sd@gmail.com
             </span>
           </div>
-          <div className="flex items-center justify-center lg:justify-start">
+          <div className="flex items-center justify-center lg:justify-start ml-2">
             <FontAwesomeIcon
               icon={faLocationDot}
               className="text-iconcolor lg:h-6 h-4"
