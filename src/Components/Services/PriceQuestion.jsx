@@ -4,8 +4,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Faqs from "./Faqs";
 import brandidentity from "../Images/brand-identity (1).png";
 import threedViews from "../Images/3d-view.png";
-import videomotion from "../Images/motion.png";
-import { motion } from "framer-motion";
+import motion from "../Images/motion.png";
 import { Link } from "react-router-dom";
 
 const PriceCard = ({
@@ -18,11 +17,9 @@ const PriceCard = ({
   return (
     <div className="h-[370px]  rounded-3xl mainbox-shadow bg-[#141414] flex flex-col justify-between font-manrope">
       <div className="flex items-center justify-start p-4 space-x-5">
-        <img
-          src={imgsrc}
-          alt={title}
-          className="lg:h-20 h-14 lg:p-4 p-2 rounded-full"
-        />
+        <div className="lg:h-20 h-14 flex justify-center items-center rounded-full shadow1">
+          <img src={imgsrc} alt={title} className="lg:h-20 h-14 lg:p-4 p-2" />
+        </div>
         <span className="lg:text-2xl text-xl  text-textcolor font-semibold">
           {title}
         </span>
@@ -82,7 +79,7 @@ const PriceQuestion = () => {
             projectsCompleted="40+"
             services="Elevate your brand with captivating motion graphics: product animations, video creation, professional editing, animated invitations."
             startingPrice="₹499"
-            imgsrc={videomotion}
+            imgsrc={motion}
           />
           <PriceCard
             title="3D Visualisation"

@@ -97,7 +97,7 @@ const Qualification = () => {
             <span className="text-xl font-semibold">Language</span>
           </div>
           <hr className="w-full text-color1" />
-          <div className="flex lg:space-x-1 space-x-2 text-gray1 lg:h-24 space-y-2 text-xl justify-center items-center text-center flex-wrap">
+          <div className="flex lg:space-x-1 space-x-2 text-gray1 lg:h-24 text-xl justify-center items-center text-center flex-wrap">
             <h1 className="bg-gray py-2 px-3 rounded-2xl">English</h1>
             <h1 className="bg-gray py-2 px-3 rounded-2xl">Marathi</h1>
             <h1 className="bg-gray py-2 px-3 rounded-2xl">Hindi</h1>

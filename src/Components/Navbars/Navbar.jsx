@@ -72,12 +72,12 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar-container py-12 font-manrope">
-        <nav className="navbar flex justify-center space-x-6 font-semibold lg:text-xl text-base rounded-3xl h-[85px] items-center xl:w-full lg:w-[400px] lg:mainbox-shadow w-auto lg:mx-auto mx-4">
+      <div className="navbar-container py-20 font-manrope">
+        <nav className="navbar flex justify-center space-x-3  font-semibold lg:text-xl text-[14px] rounded-3xl h-[85px] items-center xl:w-full lg:w-[400px] lg:mainbox-shadow w-auto lg:mx-auto mx-2">
           {pages.map(({ path, label, icon }) => (
             <Link key={path} to={path}>
               <button
-                className={`lg:py-3 py-1 lg:px-5 px-1 space-x-2 lg:rounded-xl shadow1 rounded-md flex items-center lg:space-x-2  bg-color3 hover:bg-orange transform transition-all duration-700 ${getLinkStyle(
+                className={`lg:py-3 py-3 lg:px-5 px-3  space-x-2 lg:rounded-xl shadow1 rounded-xl flex items-center lg:space-x-2  bg-color3 hover:bg-orange transform transition-all duration-700 ${getLinkStyle(
                   path
                 )}`}
               >
