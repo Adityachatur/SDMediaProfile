@@ -1,5 +1,5 @@
 <h1 align="center">SD MEDIA PROFILE</h3>
-<h1 align="left">Creating the portfolio using React js</h3>
+<h3 align="left">Creating the portfolio using React js</h3>
 
 - Website-link [https://sdcmultimedia.vercel.app/](https://sdcmultimedia.vercel.app/)
 
